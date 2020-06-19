@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'shoestore_app.apps.ShoestoreAppConfig',
-    'api.apps.ApiConfig'
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -57,7 +56,7 @@ ROOT_URLCONF = 'rest_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR)],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
